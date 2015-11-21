@@ -1,4 +1,4 @@
-package com.izeye.sample.gradle.java7;
+package com.izeye.sample.gradle.domain.java7;
 
 import java.util.ArrayList;
 import java.util.List;

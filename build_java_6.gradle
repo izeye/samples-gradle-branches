@@ -5,7 +5,7 @@ targetCompatibility=1.6
 
 compileJava {
     source = source.matching {
-        include 'com/izeye/sample/gradle/domain/**',
+        include 'com/izeye/sample/gradle/domain/*',
                 'com/izeye/sample/gradle/service/**'
     }
 }
