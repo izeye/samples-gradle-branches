@@ -1,2 +1,3 @@
 rootProject.name = 'samples-gradle-branches'
 
+include 'shared', 'api', 'services:webservice', 'services:shared'

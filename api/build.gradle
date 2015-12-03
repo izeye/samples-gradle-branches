@@ -1,0 +1,21 @@
+dependencies {
+    compile project(':shared')
+}
+
+task spiJar(type: Jar) {
+    appendix = 'spi'
+    from sourceSets.main.output
+}
+
+task dist(type: Zip) {
+    dependsOn spiJar
+    from 'src/dist'
+    into('libs') {
+        from spiJar.archivePath
+        from configurations.runtime
+    }
+}
+
+artifacts {
+    archives dist
+}
