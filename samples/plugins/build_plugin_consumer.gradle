@@ -1,0 +1,11 @@
+buildscript {
+    repositories {
+        mavenLocal()
+    }
+    
+    dependencies {
+        classpath "com.izeye.gradle.plugin:greeting:0.1.0"
+    }
+}
+
+apply plugin: 'com.izeye.gradle.plugin.greeting'
